@@ -30,9 +30,9 @@ class Dropdown {
   }
 
   select(id) {
-    const item = this.items.find(i => i.id === id)
-    this.$el.querySelector('.dropdown__label').textContent = item.label
-    this.close()
+    const item = this.items.find((i) => i.id === id);
+    this.$el.querySelector(".dropdown__label").textContent = item.label;
+    this.close();
   }
 
   open() {
